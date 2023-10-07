@@ -26,5 +26,8 @@
     <ClInclude Include="SortArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Permutare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

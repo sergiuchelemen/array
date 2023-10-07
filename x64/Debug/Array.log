@@ -1,62 +1,21 @@
 ﻿  Array.cpp
-C:\Users\SERGIU\source\repos\Array\SortArray.h(119,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\SERGIU\source\repos\Array\SortArray.h(118,64): message : while compiling class template member function 'SortArray<int> &SortArray<int>::operator +(const SortArray<int> &)'
-C:\Users\SERGIU\source\repos\Array\Array.cpp(22,7): message : see the first reference to 'SortArray<int>::operator +' in 'main'
-C:\Users\SERGIU\source\repos\Array\Array.cpp(11,22): message : see reference to class template instantiation 'SortArray<int>' being compiled
+C:\Users\SERGIU\source\repos\Array\Permutare.h(28,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\SERGIU\source\repos\Array\Permutare.h(39,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\SERGIU\source\repos\Array\Permutare.h(56,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\SERGIU\source\repos\Array\Array.h(53,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\SERGIU\source\repos\Array\Array.h(47,37): message : while compiling class template member function 'Array<unsigned int>::Array(const Array<unsigned int> &)'
+C:\Users\SERGIU\source\repos\Array\Permutare.h(33,51): message : see the first reference to 'Array<unsigned int>::Array' in 'Permutare::Permutare'
+C:\Users\SERGIU\source\repos\Array\Permutare.h(8,22): message : see reference to class template instantiation 'Array<unsigned int>' being compiled
 C:\Users\SERGIU\source\repos\Array\Array.h(67,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\SERGIU\source\repos\Array\Array.h(61,51): message : while compiling class template member function 'Array<T> &Array<T>::operator =(const Array<T> &)'
-          with
-          [
-              T=int
-          ]
-C:\Users\SERGIU\source\repos\Array\SortArray.h(15,1): message : see the first reference to 'Array<T>::operator =' in 'SortArray<int>::operator ='
-          with
-          [
-              T=int
-          ]
-C:\Users\SERGIU\source\repos\Array\SortArray.h(5,25): message : see reference to class template instantiation 'Array<T>' being compiled
-          with
-          [
-              T=int
-          ]
+C:\Users\SERGIU\source\repos\Array\Array.h(61,51): message : while compiling class template member function 'Array<unsigned int> &Array<unsigned int>::operator =(const Array<unsigned int> &)'
+C:\Users\SERGIU\source\repos\Array\Permutare.h(50,8): message : see the first reference to 'Array<unsigned int>::operator =' in 'Permutare::operator ='
 C:\Users\SERGIU\source\repos\Array\Array.h(90,17): warning C4018: '>=': signed/unsigned mismatch
 C:\Users\SERGIU\source\repos\Array\Array.h(89,38): message : while compiling class template member function 'T &Array<T>::operator [](int)'
           with
           [
-              T=int
+              T=unsigned int
           ]
-C:\Users\SERGIU\source\repos\Array\Array.cpp(15,14): message : see the first reference to 'Array<T>::operator []' in 'main'
-          with
-          [
-              T=int
-          ]
-C:\Users\SERGIU\source\repos\Array\Array.h(101,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\SERGIU\source\repos\Array\Array.h(100,36): message : while compiling class template member function 'void Array<T>::visit(void (__cdecl &)(T &))'
-          with
-          [
-              T=int
-          ]
-C:\Users\SERGIU\source\repos\Array\Array.cpp(20,12): message : see the first reference to 'Array<T>::visit' in 'main'
-          with
-          [
-              T=int
-          ]
-C:\Users\SERGIU\source\repos\Array\SortArray.h(40,19): warning C4018: '<': signed/unsigned mismatch
-C:\Users\SERGIU\source\repos\Array\SortArray.h(37,54): message : while compiling class template member function 'SortArray<int> &SortArray<int>::addValue(const T &)'
-          with
-          [
-              T=int
-          ]
-C:\Users\SERGIU\source\repos\Array\SortArray.h(118,64): message : while compiling class template member function 'SortArray<int> &SortArray<int>::operator +(const SortArray<int> &)'
-C:\Users\SERGIU\source\repos\Array\Array.cpp(22,7): message : see the first reference to 'SortArray<int>::operator +' in 'main'
-C:\Users\SERGIU\source\repos\Array\SortArray.h(44,14): warning C4018: '<': signed/unsigned mismatch
-C:\Users\SERGIU\source\repos\Array\Array.h(79,17): warning C4018: '>=': signed/unsigned mismatch
-C:\Users\SERGIU\source\repos\Array\Array.h(78,50): message : while compiling class template member function 'const T &Array<T>::operator [](int) const'
-          with
-          [
-              T=int
-          ]
-C:\Users\SERGIU\source\repos\Array\Array.h(96): warning C4715: 'Array<int>::operator[]': not all control paths return a value
-C:\Users\SERGIU\source\repos\Array\Array.h(85): warning C4715: 'Array<int>::operator[]': not all control paths return a value
-C:\Users\SERGIU\source\repos\Array\Array.h(72): warning C4715: 'Array<int>::operator=': not all control paths return a value
+C:\Users\SERGIU\source\repos\Array\Permutare.h(22,20): message : see the first reference to 'Array<unsigned int>::operator []' in 'Permutare::getData'
+C:\Users\SERGIU\source\repos\Array\Array.h(96): warning C4715: 'Array<unsigned int>::operator[]': not all control paths return a value
+C:\Users\SERGIU\source\repos\Array\Array.h(72): warning C4715: 'Array<unsigned int>::operator=': not all control paths return a value
   Array.vcxproj -> C:\Users\SERGIU\source\repos\Array\x64\Debug\Array.exe
