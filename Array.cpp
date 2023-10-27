@@ -9,17 +9,15 @@ using namespace std;
 
 int main()
 {
-    SortArray<unsigned int> b(0, 10);
-    for (int i = 0; i < b.getLength(); ++i) {
-        b[i] = 2 * i;
+    SortArray <int> a(0, 3);
+    for (int i = a.getBase(); i < a.getLength(); ++i) {
+        cin >> a.data[i];
     }
 
-    
-    Permutare p(6);
-    Permutare c(10);
-    p.setReverse();
-    c = p;
-    p.setReverse();
-    c.getData();
+    int val = a.findValue(3);
+    cout << val;
     return 0;
+    
+    
 }
+

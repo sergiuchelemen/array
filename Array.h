@@ -31,7 +31,12 @@ public:
         base = newBase;
     }
     void visit(void(&f)(T&));
-
+    void afisare() {
+        for (int i = base; i < length; ++i) {
+            cout << data[i] << ' ';
+        }
+        cout << '\n';
+    }
 };
 
 
@@ -40,7 +45,7 @@ template <class T>
 Array<T>::Array() : data(new T[0]), length(0), base(0) {}
 
 template <class T>
-Array<T>::Array(unsigned int newBase, unsigned int newLength) : data(new T[newLength]), base(newBase), length(newLength) {}
+Array<T>::Array(unsigned int newBase, unsigned int newLength) : data(new T[newLength + newBase]), base(newBase), length(newLength + newBase) {}
 
 // constructorul de copiere
 template <class T>
@@ -108,3 +113,12 @@ void f(int& k)
 {
     cout << k << ' ';
 }
+
+
+
+
+
+
+
+
+

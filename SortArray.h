@@ -3,10 +3,9 @@
 using namespace std;
 template <class T>
 class SortArray :public Array<T> {
-
 public:
     SortArray(int base, int length) : Array<T>(base, length) {}
-    int findValue(T const& value);
+    int findValue(const T& value);
     SortArray& addValue(T const& newValue);
     SortArray& removeValue(T const& value);
     SortArray& merge(SortArray<T> const& array);
@@ -16,7 +15,7 @@ public:
 
 
 template <class T>
-int SortArray<T>::findValue(T const& value) {
+int SortArray<T>::findValue(const T& value) {
     int left = this->base, right = this->length;
     while (left <= right) {
         int mid = (left + right) / 2;
@@ -98,7 +97,7 @@ SortArray<T>& SortArray<T>::merge(SortArray<T> const& arr) {
         c++;
     }
     while (j < arr.length) {
-        newData[c] = this->data[j];
+        newData[c] = arr.data[j];
         j++;
         c++;
     }
@@ -121,3 +120,5 @@ SortArray<T>& SortArray<T>::operator+(SortArray<T> const& arr) {
     }
     return *this;
 }
+
+
