@@ -1,10 +1,15 @@
 #pragma once
 #include <iostream>
+#include <algorithm>
+#include "Array.h"
 using namespace std;
+
+
 template <class T>
 class SortArray :public Array<T> {
 public:
-    SortArray(int base, int length) : Array<T>(base, length) {}
+    SortArray() : Array<T>() {}
+    SortArray(unsigned int base, unsigned int length) : Array<T>(base, length) {}
     int findValue(const T& value);
     SortArray& addValue(T const& newValue);
     SortArray& removeValue(T const& value);
@@ -58,7 +63,7 @@ SortArray<T>& SortArray<T>::removeValue(T const& value) {
         newData[i] = this->data[i];
     }
 
-    for (; i < this->length - 1; ++i) {
+    for (; i < this->length - 2; ++i) {
         newData[i] = this->data[i + 1];
     }
     delete[]this->data;
@@ -120,5 +125,3 @@ SortArray<T>& SortArray<T>::operator+(SortArray<T> const& arr) {
     }
     return *this;
 }
-
-

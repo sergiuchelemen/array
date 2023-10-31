@@ -10,7 +10,7 @@ public:
     unsigned int base;
 public:
     Array();
-    Array(unsigned int base = 0, unsigned int length = 0);
+    Array(unsigned int, unsigned int);
     Array(Array<T> const& array);
     Array& operator=(Array<T> const& array);
     T const& operator[](int pozitie) const;
@@ -25,6 +25,9 @@ public:
         return data;
     }
     void setLenght(int newLength) {
+        if (newLength > 0) {
+            delete []data;
+        }
         length = newLength;
     }
     void setBase(int newBase) {
@@ -84,9 +87,7 @@ T const& Array<T>::operator[](int pozitie) const {
     if (pozitie >= length) {
         cout << "Indexul depaseste lungimea vectorului!";
     }
-    else {
-        return data[pozitie];
-    }
+     return data[pozitie];
 }
 
 // l-value
@@ -98,6 +99,7 @@ T& Array<T>::operator[](int pozitie) {
     else {
         return data[pozitie];
     }
+    
 }
 
 // iterator
