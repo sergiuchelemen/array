@@ -63,7 +63,7 @@ SortArray<T>& SortArray<T>::removeValue(T const& value) {
         newData[i] = this->data[i];
     }
 
-    for (; i < this->length - 2; ++i) {
+    for (; i < this->length - 1; ++i) {
         newData[i] = this->data[i + 1];
     }
     delete[]this->data;

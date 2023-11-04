@@ -25,10 +25,10 @@ public:
         return data;
     }
     void setLenght(int newLength) {
-        if (newLength > 0) {
+        if (newLength >= 0) {
             delete []data;
+            length = newLength;
         }
-        length = newLength;
     }
     void setBase(int newBase) {
         base = newBase;
